@@ -1,0 +1,37 @@
+<title> Drug Event Search Page </title>
+
+
+        
+<div class="center">
+    <form name="qryForm" novalidate>
+    <!-- Create a binding between the searchString model and the text field -->
+    <input type="text" name="txtSearch" class="search-query" ng-model="searchDrugIndicationText" ng-enter="fdaDrugAPI(searchDrugIndicationText)" placeholder="search patient drug indication"  required ng-trim="false"/>
+     
+   <!--  <button  type="button" class="search-query" ng-click="fdaDrugAPI(searchDrugIndicationText)" ">Search</button>-->
+     <ng-md-icon icon ="search"  style="fill: blue" ng-click="qryForm.$valid && fdaDrugAPI(searchDrugIndicationText)"> </ng-md-icon>
+    </form>
+</div>
+<br/>
+<br/>
+
+
+ <section ng-controller="TabController as tab" ng-show="DrugData.length>0" ng-hide ="searchDrugIndicationText == null" >
+      
+     <ul class="nav nav-pills">
+            
+            <li ng-class="{ active:tab.isSet(1) }">
+              <a href ng-click="tab.setTab(1)">Grid View</a>
+            </li>
+            <li ng-class="{ active:tab.isSet(2) }">
+              <a href ng-click="tab.setTab(2)">Doughnut Chart</a>
+            </li>
+            <li ng-class="{ active:tab.isSet(3) }">
+              <a href ng-click="tab.setTab(3)">Polar Area Chart</a>
+            </li>
+      </ul>
+
+     <div ng-show='tab.isSet(1)' ng-include="'app/viewer/viewGridDrugEvents.html'"> </div>
+     <div ng-if='tab.isSet(2)' ng-include="'app/viewer/viewDoughnutChart.html'" > </div>
+     <div ng-if='tab.isSet(3)' ng-include= "'app/viewer/viewPolarChart.html'"></div>   
+ </section>
+   

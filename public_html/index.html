@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+
+        
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link href="app/style/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="app/style/css/angular-chart.css" rel="stylesheet" type="text/css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script type="text/javascript"> $(document).ready(function () { $('.dropdown-toggle').dropdown(); }); </script>
+        
+        <link href="app/style/css/app.css" rel="stylesheet" type="text/css"/>
+        <link rel="icon" href="app/style/img/favicon.ico" type="image/x-icon">
+        <link href="app/style/css/docs.css" rel="stylesheet" type="text/css"/>
+        <link href="app/style/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+        <link href="google-code-prettify/prettify.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" href="http://ui-grid.info/release/ui-grid-unstable.css" type="text/css">
+        <link href="app/style/css/UIGrid.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.8.3/angular-material.min.css">
+        <link href="app/style/css/angular-chart.css" rel="stylesheet" type="text/css"/>
+        
+        <link href="app/style/css/app.css" rel="stylesheet" type="text/css"/>
+        <!-- Implementation for angularGrid 
+        <link href="app/style/css/core.css" rel="stylesheet" type="text/css"/>
+        <link href="app/style/css/docs.css" rel="stylesheet" type="text/css"/>
+        -->
+        <base href="#">
+    </head>
+    <body ng-app="angFrameworkApp">
+      <header class="container">
+       <div class="navbar navbar-fixed-top" data-toggle="collapse" data-target=".navbar-collapse">
+         <div class="navbar-inner" >
+            <div class="container" >
+          <a class="brand" href="" data-toggle="collapse" data-target=".navbar-collapse" style="padding-top: 6px; padding-bottom: 0px;">
+            <img class="AngularJS-small" src="app/style/img/SRBanner.jpg">
+          </a>
+            
+          <ul class="nav">
+            <li class="divider-vertical"></li>
+            <li class="active"><a ui-sref="home"><i class="icon-home icon-white"></i> Home</a></li>
+            
+            <li class="divider-vertical"></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="icon-eye-open icon-white"></i> Learn <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a ui-sref="home">Home</a></li>
+                <li><a href="">Videos</a></li>
+                <li><a ui-sref="about">About</a></li>
+                <li><a href="">Tutorial</a></li>
+                <li><a href="">Case Studies</a></li>
+                <li><a ui-sref="drug">Adverse Drug Events</a></li>
+                <li><a ui-sref="food">Adverse Food Events</a></li>
+              </ul>
+            </li>
+            <li class="divider-vertical"></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="icon-book icon-white"></i> Develop <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="https://www.typesafe.com/">Play Framework</a></li>
+                <li><a href="http://hortonworks.com">Hadoop</a></li>
+                <li><a href="http://cassandra.apache.org">Cassandra</a></li>
+                <li><a href="">Contribute</a></li>
+                <li><a href="">Download</a></li>
+              </ul>
+            </li>
+            <li class="divider-vertical"></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="icon-comment icon-white"></i> Discuss <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="">Blog</a></li>
+                <li><a href="">Mailing List</a></li>
+                <li><a href="http://webchat.freenode.net/?channels=angularjs&uio=d4">Chat Room</a></li>
+                <li class="divider"></li>
+                <li><a href="https://twitter.com/#!/angularjs">Twitter</a></li>
+                <li><a href="">Google+</a></li>
+                <li class="divider"></li>
+                <li><a href="">GitHub</a></li>
+                <li><a href="">Issue Tracker</a></li>
+              </ul>
+            </li>
+            <li class="divider-vertical"></li>
+          </ul>
+          <form class="navbar-search pull-right" method="GET" action="https://www.google.com/search">
+            <input type="text" name="as_q" class="search-query" placeholder="Search">
+            <input type="hidden" name="as_sitesearch" value="google.com">
+          </form>
+      </div>
+        </div>
+       </div>    
+      </header>  
+        <br/>
+        <br/>
+        <br/>
+        <div>
+            <div ui-view> </div>
+        </div>    
+        
+        
+        <script src="app/libs/angular.js/angular.js" type="text/javascript"></script>
+        <script src="app/libs/angular-ui-router.js" type="text/javascript"></script>
+        <!-- Implementation for angularGrid
+        <script src="app/libs/angularGridUI.js" type="text/javascript"></script> -->
+        
+        
+        <script src="app/libs/angular.js/angular-touch.js" type="text/javascript"></script>
+        <script src="app/libs/angular.js/angular-animate.js" type="text/javascript"></script>
+        <script src="app/libs/angular.js/angular-resource.js" type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-aria.min.js"></script>
+        <!-- Angular Material Javascript now available via Google CDN; version 0.8 used here -->
+        <script src="//cdn.jsdelivr.net/angular-material-icons/0.4.0/angular-material-icons.min.js"></script> 
+
+         <!-- UI Grid related JS Files -->
+        <script src="http://ui-grid.info/docs/grunt-scripts/csv.js"></script>
+        <script src="http://ui-grid.info/docs/grunt-scripts/pdfmake.js"></script>
+        <script src="http://ui-grid.info/docs/grunt-scripts/vfs_fonts.js"></script>
+        <script src="http://ui-grid.info/release/ui-grid-unstable.js"></script>
+
+        <script src="google-code-prettify/prettify.min.js" type="text/javascript"></script>
+         <!-- Angular Charts JS Files -->
+         <script src="app/libs/Chart.min.js" type="text/javascript"></script>
+         <script src="app/libs/angular-chart.js" type="text/javascript"></script>
+         
+        
+        <!-- Application related JS Files -->
+        <script src="app/config/app.js" type="text/javascript"></script>
+        <script src="app/controller/angFrameWorkControllers.js" type="text/javascript"></script>
+        <script src="app/controller/fdaDrugEventController.js" type="text/javascript"></script>
+        <script src="app/controller/fdaFoodEventController.js" type="text/javascript"></script>
+        <script src="app/service/getFDADrugEventDataService.js" type="text/javascript"></script>
+        <script src="app/service/getFDAFoodEventDataService.js" type="text/javascript"></script>
+        <script src="app/controller/panelController.js" type="text/javascript"></script>
+        
+    </body>
+</html>
